@@ -1,0 +1,13 @@
+# Missing Components with react-hot-loader
+
+repro:
+
+- install dependencies
+```yarn```
+
+run project in two different modes and see the difference:
+
+- **yarn start**: runs webpack in development mode and react-hot-loader enabled
+- **yarn startNoBug**: runs webpack in production mode and react-hot-loader is not active
+
+as long as react-hot-loader is active the PivotItems are not visible on the page.
